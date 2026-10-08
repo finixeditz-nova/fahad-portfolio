@@ -62,6 +62,46 @@ footer{text-align:center;padding:40px 20px;color:#858a78;font-size:12px;border-t
 .leaves{position:absolute;inset:0;pointer-events:none;overflow:hidden}.leaf{position:absolute;font-size:18px;opacity:.35;animation:float 8s linear infinite}
 @keyframes float{0%{transform:translateY(10vh) rotate(0)}100%{transform:translateY(110vh) rotate(360deg)}}
 @media(max-width:700px){nav{align-items:flex-start}.logo{font-size:8px}.navlinks a{font-size:8px;padding:7px 6px}.grid{grid-template-columns:1fr}.stat{grid-template-columns:120px 1fr;font-size:11px}.moon{width:75px;height:75px;right:7%;top:13%}section{padding:65px 16px}}
+
+/* BLUE SPACE + PIXEL DRAGON UPDATE */
+body:before{background:
+radial-gradient(circle at 50% 12%,rgba(76,161,255,.42) 0 10%,transparent 32%),
+radial-gradient(circle at 15% 28%,rgba(29,102,210,.26),transparent 25%),
+radial-gradient(circle at 84% 38%,rgba(65,47,181,.22),transparent 28%),
+linear-gradient(180deg,#07162d 0%,#071b38 38%,#071b27 58%,#050b12 100%)}
+body:after{opacity:.10;background-image:
+radial-gradient(circle,rgba(180,220,255,.8) 1px,transparent 1.5px),
+radial-gradient(circle,rgba(120,180,255,.55) 1px,transparent 1.5px);
+background-size:71px 71px,113px 113px;background-position:10px 20px,40px 70px}
+.moon{background:#bfe5ff;box-shadow:0 0 75px #65b9ff88,0 0 0 8px #9bd8ff18}
+.mountain{background:
+linear-gradient(135deg,transparent 0 18%,#0b2741 18% 33%,transparent 33% 40%,#103653 40% 58%,transparent 58%),
+linear-gradient(45deg,#071725 0 25%,transparent 25% 45%,#0b2538 45% 65%,transparent 65%)}
+.heroCard{background:linear-gradient(180deg,rgba(8,31,57,.9),rgba(5,14,25,.94));border-color:#426b8f;box-shadow:0 0 0 6px #0a1d31,12px 16px 0 #02070c,0 25px 80px #006cff44}
+h1{color:#8fd4ff;text-shadow:5px 5px #102e4b}
+.btn{background:#165b91;border-color:#68b9ed;box-shadow:0 6px 0 #092c48}
+.sectionTitle{color:#8fd4ff;text-shadow:3px 3px #102e4b}
+.panel{background:rgba(5,17,28,.92);border-color:#3d6686;box-shadow:8px 8px 0 #02070c}
+.icon{background:#0c2941;border-color:#4d82a9}
+.project a{background:#0d3452;border-color:#4d8bb7}
+.stat .fill{background:repeating-linear-gradient(90deg,#2f9fe8 0 16px,#247bb4 16px 19px)}
+.kicker{color:#9ecfff}
+
+/* Pixel dragon */
+.dragon{position:absolute;right:7%;top:25%;width:150px;height:115px;image-rendering:pixelated;filter:drop-shadow(0 0 16px rgba(65,170,255,.55));transform:scale(1.2);opacity:.94}
+.d-pixel{position:absolute;width:18px;height:18px;background:#397fb3;box-shadow:inset 3px 3px #69b9e8,inset -3px -3px #173f62}
+.d1{left:54px;top:20px}.d2{left:72px;top:20px}.d3{left:90px;top:20px}
+.d4{left:36px;top:38px}.d5{left:54px;top:38px}.d6{left:72px;top:38px}.d7{left:90px;top:38px}.d8{left:108px;top:38px}
+.d9{left:36px;top:56px}.d10{left:54px;top:56px}.d11{left:72px;top:56px}.d12{left:90px;top:56px}
+.d13{left:54px;top:74px}.d14{left:72px;top:74px}.d15{left:90px;top:74px}
+.d16{left:108px;top:56px;background:#61bfff}.d17{left:126px;top:56px;background:#61bfff}.d18{left:108px;top:74px}
+.dragon:before,.dragon:after{content:"";position:absolute;width:18px;height:36px;background:#2d6895;top:38px}
+.dragon:before{left:18px;transform:skewY(25deg)}.dragon:after{left:90px;top:74px;transform:skewY(-25deg)}
+@media(max-width:700px){.dragon{right:1%;top:21%;transform:scale(.62);transform-origin:top right;opacity:.75}.heroCard{margin-top:20px}}
+.contact-card{display:grid;gap:12px;margin-top:22px}
+.contact-row{display:flex;align-items:center;gap:12px;padding:12px 14px;background:#0a2236;border:2px solid #315d7c;text-align:left}
+.contact-row span:first-child{font-size:20px;width:28px}
+.contact-row a{color:#a9dcff;word-break:break-word}
 </style>
 </head>
 <body>
@@ -74,6 +114,15 @@ footer{text-align:center;padding:40px 20px;color:#858a78;font-size:12px;border-t
 
 <header class="hero">
   <div class="moon"></div><div class="mountain"></div>
+<div class="dragon" aria-label="pixel dragon">
+  <div class="d-pixel d1"></div><div class="d-pixel d2"></div><div class="d-pixel d3"></div>
+  <div class="d-pixel d4"></div><div class="d-pixel d5"></div><div class="d-pixel d6"></div>
+  <div class="d-pixel d7"></div><div class="d-pixel d8"></div><div class="d-pixel d9"></div>
+  <div class="d-pixel d10"></div><div class="d-pixel d11"></div><div class="d-pixel d12"></div>
+  <div class="d-pixel d13"></div><div class="d-pixel d14"></div><div class="d-pixel d15"></div>
+  <div class="d-pixel d16"></div><div class="d-pixel d17"></div><div class="d-pixel d18"></div>
+</div>
+
   <div class="leaves">
     <span class="leaf" style="left:8%;animation-delay:0s">🍃</span>
     <span class="leaf" style="left:28%;animation-delay:2s">✦</span>
@@ -134,8 +183,14 @@ footer{text-align:center;padding:40px 20px;color:#858a78;font-size:12px;border-t
 <section id="contact"><div class="container contact">
   <div class="sectionTitle">📜 CONTACT / QUEST</div>
   <div class="panel">
-    <h3 class="pixel" style="font-size:14px;color:#dfd184">HAVE A PROJECT?</h3>
+    <h3 class="pixel" style="font-size:14px;color:#8fd4ff">HAVE A PROJECT?</h3>
     <p style="margin-top:18px">Let's create something worth entering the world for.</p>
+    <div class="contact-card">
+      <div class="contact-row"><span>📞</span><a href="tel:+918921712418">8921712418</a></div>
+      <div class="contact-row"><span>✉️</span><a href="mailto:fahadnazeem555@gmail.com">fahadnazeem555@gmail.com</a></div>
+      <div class="contact-row"><span>📸</span><a href="https://www.instagram.com/finixeditz_/" target="_blank" rel="noopener">@finixeditz_</a></div>
+      <div class="contact-row"><span>📸</span><a href="https://www.instagram.com/_.fahxd._/" target="_blank" rel="noopener">@_.fahxd._</a></div>
+    </div>
     <a class="btn" href="https://drive.google.com/drive/folders/13gYPGGVIyPh8V1kO83H1CFwiBGokj0ls?usp=sharing" target="_blank" rel="noopener">VIEW MY WORK</a>
   </div>
 </div></section>
